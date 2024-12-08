@@ -1,0 +1,521 @@
+*{
+    margin:0 auto;
+    font-family: "Poppins", sans-serif;
+}
+#header{
+height: 60px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+#header .logo{
+    height:40px;
+    width:50px;
+    display: flex;
+    align-items: center;
+}
+#header .logo i{
+    font-weight: 600;
+    font-size: 26px;
+}
+#header .logo span{
+    font-weight: 800;
+    font-size: 30px;
+    color:#01030c
+}
+#header .menu ul li{
+    display: inline;
+    margin:10px;
+    font-size:15px;
+    border-right:2px solid black;
+    padding-right:50px;
+}
+#header .menu ul li:last-child{
+    border:none;
+}
+#header .menu ul li:hover{
+    font-size: 17px;
+}
+#header .menu ul li span{
+border:5px solid black;
+border-left-color:white;
+border-right-color:white;
+border-bottom-color:white;
+}
+.submenu{
+    position:absolute;
+    display: none;
+    margin-left: 123px;
+}
+#header .menu ul li:hover > .submenu{
+    display:block;
+    }
+#header .btn{
+    padding: 8px;
+    border-radius:10px;
+    color:white;
+    background-color: #604bff;
+    font-size: 20px;
+}
+#header .btn:hover{
+    padding: 9px;
+    border-radius:10px;
+    background-color:darkslategray; ;
+}
+#header .menu ul li a{
+    text-decoration: none;
+    color:darkslategray;
+}
+#header .menu ul li a:hover{
+    color: blueviolet;
+    border-bottom: 5px solid black;
+    transition: 0.3s ease-in-out;
+}
+#banner{
+    display: flex;
+    justify-content: space-evenly;
+   margin-top: 20px; 
+   background-image: url(banner.webp);
+   background-size:cover;
+   background-repeat: no-repeat;
+   height: 700px;
+}
+#banner > .banner-content {
+    margin-left: 100px;
+}
+#banner .banner-content{
+    margin-top: 100px; 
+    height: 400px;
+    width:35%
+}
+#banner .banner-content h1{
+    font-size: 50px;
+    font-weight: 650;
+    line-height: 1.4;
+}
+#banner .banner-content p{
+    margin-top:20px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 2.0;
+    margin-bottom: 50px;
+}
+#banner .banner-content .btn{
+    padding: 15px 25px;
+    border-radius: 8px;
+    background-color: #604bff;
+    color: white;
+}
+#banner .banner-content .btn:hover{
+    background-color: darkslategray;
+    font-size:16.5px;
+    transition: 0.3s ease-in-out;
+}
+#banner .banner-image{
+    height: 500px;
+    width: 40%;
+  }
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    padding: 30px;
+  }
+  .grid-container .img1 img{
+    box-shadow: 5px 5px 5px 5px black;
+    margin-top: 15px;
+    border:1px solid black;
+    outline: 10px solid white;
+    border-radius: 100px 2px 5px 10px;
+  }
+  .grid-container .img2 img{
+    box-shadow: 5px 5px 5px 5px black;
+    border:1px solid black;
+    outline: 10px solid white;
+    border-radius: 2px 2px 2px 2px;
+  }
+  .grid-container .img3 img{
+    box-shadow: 5px 5px 5px 5px black;
+    margin-top: 20px;
+    border:1px solid black;
+    outline: 10px solid white;
+    border-radius: 2px 2px 2px 100px;
+  }
+  .grid-container .img4 img{
+    box-shadow: 5px 5px 5px 5px black;
+    border:1px solid black;
+    outline: 10px solid white;
+    border-radius: 2px 2px 100px 2px;
+  }
+  #imgbg{
+    background-image: url('./bannnerjoin.jpg');
+    background-size: cover;
+  }
+  #content{
+  margin-top: 50px;;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+  #content .text{
+    width:400px;
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+  #content .text span{
+    font-size: 35px;
+    font-weight: 600;
+  }
+  #content .text .n{
+    font-size: 35px;
+    color:#604bff;
+    font-weight: 600;
+  }
+  #content .brand1 span{
+    font-weight: 700;
+    font-size: 23px;
+  }
+  #content .brand1 i{
+    font-size:23px;
+  }
+  #content > .text {
+    margin-left: 100px;
+}
+#border{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width:80%;
+  border:0.5px solid lightblue;
+  box-shadow: .5px .5px .5px .5px lightblue;
+}
+#service {
+  display: flex;
+  justify-content: space-around;
+  margin:auto;
+}
+#service .img{
+  height:400px;
+  width:45%;
+  background-image: url(./serviceimg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 4px 4px 4px 150px;
+  box-shadow: 2px 2px 2px 2px black;
+}
+#service .img .img2{     
+  float: left;  
+}
+#service .img .img2 .img3{
+  display: flex;
+  flex-direction: column;
+  background-color: white; 
+  padding: 25px;
+  border-radius: 50% 50% 50% 50%;
+  margin-left: -26px;
+  margin-top: -30px;
+  box-shadow: 1px 1px 1px 1px black;
+}
+#service .img .img2 .img3 div{
+font-size: 40px;
+font-weight: 700;
+color: #604bff;
+}
+#service .img .img2 .img3 span{
+  margin-top: -10px;
+  font-weight: 600;
+}
+#service .content{
+  height:400px;
+  width:35%;  
+  margin-left: 0px;
+}
+#service .content h3{
+  font-family: "Dancing Script", cursive;
+  color: #2ecc71;
+}
+#service .content h2{
+  margin-top: 10px;
+  font-size: 40px;
+  font-weight: 600;
+}
+#service .content p{
+  font-size: 15px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+#service .content .btn{
+  padding: 15px 25px;
+  border-radius: 8px;
+  background-color: #604bff;
+  color: white;
+}
+#service .content .btn:hover{
+  background-color: darkslategray;
+  font-size:16.5px;
+  transition: 0.3s ease-in-out;
+}
+#social{
+  margin-top: 50px;
+  display: flex;
+}
+#social .yt{
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+}
+#social .yt i{
+  font-size: 60px;
+}
+#social .yt div{
+display: flex;
+flex-direction: column;
+margin-left: 20px;
+}
+#social .yt div .big{
+  font-size: 37px;
+  font-weight: 600;
+}
+#social .yt div .small{
+  margin-top: -10px;
+    font-size: 17px;
+    font-weight: 500;
+}
+#INFLUENCER{
+  display: flex;
+  width:80%;
+  margin-top: 50px;
+}
+#INFLUENCER .content{
+  height:400px;
+  width:35%;  
+  margin-left: 0px;
+  padding: 30px;
+}
+#INFLUENCER .content h3{
+  font-family: "Dancing Script", cursive;
+  color: #2ecc71;
+}
+#INFLUENCER .content h2{
+  margin-top: 10px;
+  font-size: 40px;
+  font-weight: 600;
+}
+#INFLUENCER .content p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+#INFLUENCER .content .btn{
+  padding: 15px 25px;
+  border-radius: 8px;
+  background-color: #604bff;
+  color: white;
+}
+#INFLUENCER .content .btn:hover{
+  background-color: darkslategray;
+  font-size:16.5px;
+  transition: 0.3s ease-in-out;
+}
+#INFLUENCER .boxesgrid{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+    padding: 30px;
+  }
+  #INFLUENCER .boxesgrid .box1{
+    width: 300px;
+    height: 230px;
+    box-shadow: 1px 1px 1px 1px black;
+    border-radius: 5px;
+  }
+  #INFLUENCER .boxesgrid .box1:hover{
+    transform: scale(1.0);
+    box-shadow: 2px 2px 2px 2px black;
+    border-radius: 10px;
+    border-bottom: 4px solid #604bff;
+    transition: 0.3s ease-in-out;
+  }
+  #INFLUENCER .boxesgrid .box1 h2{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 40px;
+    color:#1b0aa1a3;
+  }
+  #INFLUENCER .boxesgrid .box1 h2:hover{
+    font-size: 50px;
+    overflow: hidden;
+  }
+  #INFLUENCER .boxesgrid .box1 h3{
+    margin-left: 20px;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  #INFLUENCER .boxesgrid .box1 p{
+    margin-left: 20px;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+#footer{
+  margin-top: 50px;
+  width:100%;
+  height: 300px;
+  background-image: url('./footerimg.jpg');
+  background-size:cover;
+  background-position:left-center;
+  background-repeat: no-repeat;  
+}
+#footer .color{
+  width:100%;
+  height: 300px;
+  background-color:#ffffffc2;
+  display: flex;
+}
+#footer .color .main1{
+  margin-top: 50px; 
+}
+#footer .color .main1 div{
+  display: block;
+}
+#footer .color .main1 a{
+  margin-left: 5px;
+}
+#footer i{
+  font-weight: 600;
+  font-size: 26px;
+}
+#footer span{
+  font-weight: 800;
+  font-size: 30px;
+  color:#01030c;
+  margin-top: 4px;
+}
+#footer p{
+  margin-top:5px;  
+  height: 150px;
+  width:275px;
+  margin-bottom: -40px;
+}
+#footer .color .main2{
+  margin-top: 50px;
+}
+#footer .color .main2 a{
+padding: 5px;
+color:black;
+display: block;
+text-decoration: none;
+}
+#footer .color .main2 a:hover{
+  color:#604bff;
+  font-size: 16.5px;
+  transition: 0.3s ease-in-out;
+}
+#footer .color .main2 .in{
+  padding: 10px;
+  border-radius: 20px;  
+  font-size: 20px;
+    margin-top: 30px;
+    margin-left: -40px;
+}
+#footer .color .main2 .btn{
+  padding: 10px;
+  border-radius: 20px;
+  margin-left: -50px;
+  background-color: #604bff; 
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+} 
+#footer .color .main2 .btn:hover{
+  background-color:darkslategray;
+  font-size:21px;
+  transition: 0.3s ease-in-out;
+}
+@media screen and (max-width: 1498px) {
+  #service .content h2{
+    margin-top: 5px;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  #service .content p{
+      line-height: 1.3;
+      font-weight: 400;
+      margin-top: 15px;
+      margin-bottom: 20px;
+  }
+  #service .content .btn{
+    padding: 7.5px 12.5px;
+  }
+}
+@media screen and (max-width: 1298px){
+  #INFLUENCER .content{
+    height:400px;
+    width:35%;  
+    margin-left: 0px;
+    padding: 30px;
+  }
+  #INFLUENCER .content h3{
+    font-family: "Dancing Script", cursive;
+    color: #2ecc71;
+  }
+  #INFLUENCER .content h2{
+    margin-top: 5px;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  #INFLUENCER .content p{
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.3;
+      margin-top: 15px;
+      margin-bottom: 20px;
+  }
+  #INFLUENCER .content .btn{
+    padding: 7.5px 12.5px;
+  }
+}
+@media screen and (max-width: 1230px){
+  #banner{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        height: 1220px;
+        flex-wrap: wrap;
+        align-content: space-around;
+}
+#banner .banner-content{
+  margin-top: 20px; 
+  height: 500px;
+  width:50%
+}
+#banner .banner-content h1{
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+#banner .banner-content p{
+  margin-top:20px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 2.5;
+  margin-bottom: 50px;
+}
+#banner .banner-content .btn{
+  padding: 30px 40px;
+  border-radius: 10px;
+}
+.grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 20px;
+        padding: 30px;
+        margin-top: 90px;
+        margin-left: -160px;
+}
+}
